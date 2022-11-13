@@ -12,7 +12,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.simplemobiletools.voicerecorder"
+        applicationId "com.luckystartools.voicerecorder.pro"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 31
@@ -63,7 +63,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.SimpleMobileTools:Simple-Commons:ffead928f7'
+//    implementation 'com.github.SimpleMobileTools:Simple-Commons:ffead928f7'
+    implementation 'com.github.Dojane:Simple-Commons:69128c36da'
     implementation 'org.greenrobot:eventbus:3.3.1'
     implementation 'com.github.Armen101:AudioRecordView:1.0.4'
     implementation 'androidx.documentfile:documentfile:1.0.1'
