@@ -22,6 +22,7 @@ import com.simplemobiletools.voicerecorder.helpers.getAudioFileContentUri
 import com.simplemobiletools.voicerecorder.interfaces.RefreshRecordingsListener
 import com.simplemobiletools.voicerecorder.models.Recording
 import kotlinx.android.synthetic.main.item_recording.view.*
+
 import java.io.File
 
 class RecordingsAdapter(
@@ -237,9 +238,11 @@ class RecordingsAdapter(
                 mutate()
                 setTint(activity.getProperTextColor())
             }
-
+//rita pop menu
             overflow_menu_icon.setOnClickListener {
                 showPopupMenu(overflow_menu_anchor, recording)
+
+
             }
         }
     }
@@ -281,8 +284,13 @@ class RecordingsAdapter(
 
                 true
             }
+
+           setOnDismissListener {
+           }
             show()
         }
+
+
     }
 
     private fun executeItemMenuOperation(callId: Int, removeAfterCallback: Boolean = true, callback: () -> Unit) {
